@@ -5,6 +5,10 @@
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
+    "start": "ionic-app-scripts serve",
+    "deploy:login": "firebase login",
+    "deploy:init": "firebase init",
+    "deploy": "ionic-app-scripts build --prod && firebase deploy",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
@@ -33,6 +37,7 @@
   "devDependencies": {
     "@ionic/app-scripts": "2.1.3",
     "@ionic/cli-plugin-ionic-angular": "1.4.0",
+    "firebase-tools": "^3.9.1",
     "ionic": "3.6.0",
     "typescript": "2.3.4"
   },
